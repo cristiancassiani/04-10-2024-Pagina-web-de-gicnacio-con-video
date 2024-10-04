@@ -1,0 +1,451 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* font-family: 'Poppins', sans-serif;*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #161d25;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 200px 0;
+    position: relative;
+}
+
+img{
+    max-width: 100%;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    color: #e0003e;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.logo span{
+    color: #fafcfc;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    display: block;
+    color: white;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.menu .navbar ul li a:hover{
+    color: #e0003e;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icon{
+    width: 25px;
+}
+
+.menu  label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-text{
+    width: 100%;
+    text-align: center;
+}
+
+.header-text h1{
+    color: white;
+    font-size: 70px;
+    line-height: 75px;
+    text-transform:uppercase ;
+    margin-bottom: 45px;
+}
+
+.header-text span{
+    color: #e0003e;
+    font-size: 70px;
+}
+
+.header-text p{
+    font-size: 16px;
+    color: white;
+    padding: 0 200px;
+    margin-bottom: 25px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-1{
+    display: inline-block;
+    background-color: #e0003e;
+    color: white;
+    padding: 13px 25px;
+   margin: 0 10px ;
+   border-radius: 25px;
+}
+
+.btn-1:hover{
+    background-color: #c30239;
+}
+
+/*-----service------*/
+
+.services{
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 35px;
+}
+
+.service{
+    text-align: center;
+    padding: 35px;
+
+}
+
+.service img{
+    width: 50px;
+    height: 50px;
+}
+
+.service h3{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 16px;
+    color: #d5d5d5;
+
+}
+
+/*-------------about-----------*/
+.about{
+    padding: 50px 0px;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+}
+
+.about-text{
+ flex-basis: 50%;
+ padding-right: 35px;
+}
+
+span {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c30239;
+}
+
+h2{
+    font-size: 35px; /* en generales*/
+    color: white;
+    margin: 15px 0;
+    line-height: 1;
+}
+
+hr{
+    border: 1px solid #e0003e;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.about-img{
+    flex-basis: 50%;  
+    padding-left: 35px;
+    text-align: center;
+  
+}
+
+.about-img img{
+    width: 500px;
+    border-radius: 25px;
+}
+
+/*-------------testimonio-----------*/
+
+.testimonial{
+    padding: 50PX 0;
+    text-align: center;
+}
+
+.testimonial-content{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.testimonial-1{
+   flex-basis: calc(50% - 20px);
+   background-color: #24272e;
+   padding: 25px;
+   box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  
+}
+
+.testimonial-1 h4{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.testimonial-1 p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.face{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1.5px solid #c30239;
+    margin-bottom: 15px;
+}
+
+/*-------------information----------------*/
+.information{
+    padding: 50px 100px;
+    display: flex;
+    text-align: center;
+    
+  
+}
+
+.information-text{
+    flex-basis: 50%;
+    margin-left: 20px;
+}
+
+
+
+.f1, .f2{/*estilo en general alos videos con esta clase*/
+  width: 550px;
+}
+
+input {
+    display: block;
+    padding: 17px;
+    background-color: transparent;
+    border: 1px solid #979797;
+    width: 350px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    color: white;
+}
+
+::placeholder{
+    color: #898989;
+}
+
+.office{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.office h3{
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 15px;
+    color: white;
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: #191a1f;
+}
+.footer-contect{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.link a{
+    font-size: 17px;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover{
+    color: #e0003e;
+}
+
+/*responsive*/
+
+@media(max-width:991px){
+    .menu{
+        padding: 5px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #24272e;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        padding: 50px 30px;
+    }
+    .header-text{
+        text-align: center;
+        padding: 0;
+    }
+
+    .header-text p{
+        padding: 0;
+    }
+
+    .services{
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px;
+    }
+
+    .about{
+        padding: 30px;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text{
+        padding-bottom: 30px;
+    }
+
+    .testimonial{
+        padding: 30px;
+    }
+
+    .testimonial-content{
+        flex-direction: column;
+        
+    }
+
+    .testimonial-1{
+        margin-bottom: 25px;
+    }
+
+    .information{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .f1 ,.f2 {
+        width: 100%;
+    }
+
+    .information-text{
+        text-align: center;
+        order: -2;
+        margin: 0 0 20px 0;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-contect{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
